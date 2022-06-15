@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
       - name: springapp
-        image: asia-docker.pkg.dev/GOOGLE_CLOUD_PROJECT/my-repo/springapp:COMMIT_SHA
+        image: gcr.io/optical-carrier-353406/springapp:COMMIT_SHA
         ports:
         - containerPort: 8080
