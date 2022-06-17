@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
       - name: springapp
-        image: gcr.io/optical-carrier-353406/springapp:f6824ff
+        image: gcr.io/optical-carrier-353406/springapp:99429fe
         ports:
         - containerPort: 8080
