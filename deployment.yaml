@@ -23,3 +23,22 @@ spec:
         image: gcr.io/optical-carrier-353406/springapp:99429fe
         ports:
         - containerPort: 8080
+
+---
+## Service ###
+
+apiVersion: v1
+kind: Service
+metadata:
+    labels:
+        app: springapp
+    name: springapp-svc
+    namespace: springapp
+spec:
+    ports:
+    - port: 3000
+      protocol: TCP
+      targetPort: 3000
+    selector:
+        app: springapp
+    type: ClusterIP
