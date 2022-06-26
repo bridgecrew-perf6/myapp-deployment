@@ -9,7 +9,7 @@ metadata:
   labels:
     app: springapp
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: springapp
