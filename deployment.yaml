@@ -5,7 +5,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: springapp
-  namespace: default
+  namespace: springapp
   labels:
     app: springapp
 spec:
